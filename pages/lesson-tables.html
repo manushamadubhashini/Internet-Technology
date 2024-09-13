@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson-tables</title>
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+  <body>
+    <h1>Tables</h1>
+    <!-- Simple table -->
+    <strong>========Simple table</strong>
+    <br />
+    <table style="width: 400px">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Manusha</td>
+          <td>Madubhashini</td>
+          <td>20</td>
+          <td>0778987653</td>
+        </tr>
+        <tr>
+          <td>Umesha</td>
+          <td>Udari</td>
+          <td>24</td>
+          <td>0759875431</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Summary1</td>
+          <td>Summary2</td>
+          <td>Summary3</td>
+          <td>Summary4</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <!-- Table with Colspan -->
+    <strong>=========Table with Colspan</strong>
+    <br />
+    <table style="width: 400px; text-align: center">
+      <tr style="height: 100px">
+        <td colspan="2">1</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr style="height: 100px">
+        <td>5</td>
+        <td colspan="2">6</td>
+        <td>8</td>
+      </tr>
+      <tr style="height: 100px">
+        <td>9</td>
+        <td colspan="3">10</td>
+      </tr>
+      <tr style="height: 100px">
+        <td colspan="4">13</td>
+      </tr>
+    </table>
+    <br />
+    <!-- Table with rowspan -->
+    <strong>=========Table with rowspan</strong>
+    <br />
+    <table style="width: 400px; text-align: center">
+      <tr style="height: 100px">
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr style="height: 100px">
+        <td>6</td>
+        <td>7</td>
+        <td rowspan="3">8</td>
+      </tr>
+      <tr style="height: 100px">
+        <td>9</td>
+        <td rowspan="2">10</td>
+        <td>11</td>
+      </tr>
+      <tr style="height: 100px">
+        <td>13</td>
+        <td>15</td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson-form-element</title>
+  </head>
+  <body>
+    <h1>Form elements</h1>
+    <!-- label -->
+    <strong>=======label</strong>
+    <br />
+    <label for="username">UserName: </label>
+    <hr style="height: 2px; background-color: black" />
+    <br />
+    <!-- input -->
+    <strong>=======input</strong>
+    <br />
+    <br />
+    <label for="firstname">FirstName: </label>
+    <input type="text" placeholder="Input your first name" maxlength="5" />
+    <br />
+    <br />
+    <!-- Number INPUT -->
+    <strong>======Number input</strong>
+    <br />
+    <label for="age">Age: </label>
+    <input type="number" value="18" />
+    <br />
+    <br />
+    <strong>======password</strong>
+    <br />
+    <label for="password">password</label>
+    <input type="password" name="password" />
+    <br />
+    <br />
+    <strong>======Date input</strong>
+    <label for="Date">Date</label>
+    <input type="date" name="Date" />
+    <br />
+    <strong>=======Radio Button</strong>
+    <br />
+    <label for="male">Male</label>
+    <input type="radio" name="gender" />
+    <label for="female">Female</label>
+    <input type="radio" name="gender" />
+    <br />
+    <strong>=========checkbox</strong>
+    <br />
+    <label for="remeber">Remember me</label>
+    <input type="checkbox" name="remember" />
+    <br />
+    <strong>==========file upload</strong>
+    <br />
+    <input type="file" name="file" />
+    <!-- textarea -->
+    <strong>========textarea</strong>
+    <br />
+    <textarea
+      name="message"
+      id="message"
+      placeholder="Enter your message here"
+      rows="4"
+      cols="30"
+    ></textarea>
+    <br />
+    <!-- button -->
+    <strong> button</strong>
+    <br />
+    <button type="submit">Submit</button>
+    <button type="button" onclick="alert('Hello world')">Click</button>
+    <!-- select -->
+    <strong>====select</strong>
+    <br />
+    <select name="technology" id="technology">
+      <option value="Java">java</option>
+      <option value="python">python</option>
+      <option value="SQL">MySQL</option>
+    </select>
+    <br />
+    <!-- field set and legent -->
+    <strong>=====field set and legent</strong>
+    <br />
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" />
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" />
+    </fieldset>
+    <!-- form -->
+    <strong>======form</strong>
+    <br />
+    <form action="/submit.page" method="post">
+      <label for="firstName">FirstName: </label>
+      <input type="text" id="fname" name="fname" required />
+      <br />
+      <label for="LastName">LastName: </label>
+      <input type="text" id="Lname" name="Lname" required />
+      <br />
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
